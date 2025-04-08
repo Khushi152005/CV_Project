@@ -1,33 +1,46 @@
 Computer Vision Algorithms
-This project contains implementations of various computer vision algorithms in Jupyter Notebooks.
-
-Project Structure
+This project contains implementations of various computer vision algorithms using OpenCV and Python. Each notebook demonstrates a different feature detection or image matching technique.
 car1.png
 car2.png
+mou1.jpg
+mou2.jpg
+chess.jpg
+corner.jpg
+
 SIFT.ipynb
-
-img8.jpeg
-Shi-Tomasi Detection
-
-img1.jpeg
 Harris.ipynb
+Shi_Tomasi.ipynb
 
 Notebooks
-SIFT.ipynb: Implementation of the Scale-Invariant Feature Transform (SIFT) algorithm.
-Harris.ipynb: Implementation of the Harris Corner Detection algorithm.
-RANSAC.ipynb: Implementation of the RANSAC for image stitching
-Images
-image1.jpg,image2.jpg: Image for SIFT algorithm.
-mou1.jpg, moi22.jpg: Example image for RANSAC image stitching algorithm.
-chess.jpg:Additional image for Harris Corner detection algorithm.
-Requirements
-To run the notebooks, you need the following:
+SIFT.ipynb:
+Implements Scale-Invariant Feature Transform (SIFT) to detect and match keypoints between two images.
+➤ Images Used: car1.png, car2.png
+
+Harris.ipynb:
+Applies Harris Corner Detection algorithm to identify corners in an image.
+➤ Image Used: img1.jpeg
+
+Shi_Tomasi.ipynb:
+Utilizes the Shi-Tomasi corner detection (Good Features to Track) to highlight strong corners.
+➤ Image Used: img8.jpeg
+
+🛠️ Requirements
+Make sure the following libraries are installed:
 
 Python 3.x
-Jupyter Notebook
-OpenCV
+
+OpenCV (with contrib module for SURF)
+
 NumPy
-Usage
-Clone the repository.
-Open the desired notebook in Jupyter Notebook.
-Run the cells to see the algorithm in action.
+
+Matplotlib
+
+Jupyter Notebook
+pip install opencv-contrib-python matplotlib numpy
+
+▶️ Usage
+Open the repository in Jupyter Notebook.
+
+Run any of the .ipynb notebooks to see the algorithm visualizations.
+
+Make sure the required images are present in the same directory.
